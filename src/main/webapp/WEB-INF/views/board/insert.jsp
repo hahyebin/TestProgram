@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form action="insert.do" method="post">
+	<form action="insert.do" method="get">
 		<table border="1">
 			<tbody>
 				<tr>
