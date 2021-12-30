@@ -11,6 +11,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
       ORDER BY IDX DESC
 	</select>
 	
+	<select id="selectBoardCount"  resultType="int">
+		SELECT count(*)
+		  FROM BOARD
+	</select>
+	
+	
 	<insert id="insertBoard" parameterType="com.koreait.test1.dto.Board">
 		INSERT INTO 
 		 BOARD (IDX, WRITER, TITLE, CONTENT, CREATED)
