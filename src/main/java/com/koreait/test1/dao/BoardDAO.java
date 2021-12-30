@@ -8,9 +8,11 @@ public class BoardDAO {
 
 	public ArrayList<Board> selectBoardList() { return null; }
 	public int selectBoardCount() { return 0; }
-	public int insertBoard(String writer, String title, Strincom.kig content) { return 0; }
+//	public int insertBoard(String writer, String title, String content) { return 0; }
+	public int insertBoard(Board board) { return 0; }
 	public Board selectByIdx(int idx) { return null; }
-	public int updateBoard(String title, String content, int idx) { return 0; }
+	//public int updateBoard(String title, String content, int idx) { return 0; }
+	public int updateBoard(Board board) { return 0; }
 	public int deleteBoard(int idx) { return 0; }
 	
 }

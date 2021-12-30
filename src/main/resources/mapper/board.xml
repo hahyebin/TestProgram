@@ -11,7 +11,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
       ORDER BY IDX DESC
 	</select>
 	
-	<insert id="insertBoard" parameterType="">
+	<insert id="insertBoard" parameterType="com.koreait.test1.dto.Board">
 		INSERT INTO 
 		 BOARD (IDX, WRITER, TITLE, CONTENT, CREATED)
 		VALUES (BOARD_SEQ.NEXTVAL, #{param1}, #{param2}, #{param3}, SYSDATE)
@@ -23,14 +23,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		 WHERE IDX = #{idx}
 	</select>
 	
-	<update id="updateBoard">
+	<update id="updateBoard" parameterType="com.koreait.test1.dto.Board">
 		UPDATE BOARD
 		   SET TITLE = #{param1},
 		       CONTENT = #{param2}
 		 WHERE IDX = #{param3}
 	</update>
 
-	<delete id="deleteBoard">
+	<delete id="deleteBoard" parameterType="int">
 		DELETE 
 		  FROM BOARD
 		 WHERE IDX = #{idx}
