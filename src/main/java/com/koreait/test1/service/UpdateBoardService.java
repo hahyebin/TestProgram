@@ -15,6 +15,8 @@ import com.koreait.test1.dto.Board;
 
 public class UpdateBoardService implements BoardService {
 
+	
+	
 	@Override
 	public void execute(SqlSession sqlSession, Model model) {
 

@@ -10,6 +10,25 @@ public class Board {
 	private String content;
 	private Date created;
 	
+	public Board() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+	public Board(int idx, String writer, String title, String content, Date created) {
+		super();
+		this.idx = idx;
+		this.writer = writer;
+		this.title = title;
+		this.content = content;
+		this.created = created;
+	}
+
+
+
+
 	public int getIdx() {
 		return idx;
 	}
